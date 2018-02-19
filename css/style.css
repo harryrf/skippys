@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
+/* Remove all margin and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile Site ** */
+
+/* Header / Navigation ** */
+
+header#showcase-top {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  text-align: center;
+  line-height: 1.5em;
+  color: #f4f4f4;
+  background: #111;
+  border-bottom: 1px solid #0c0c0c;
+}
+
+header#showcase-top span {
+  color: #548a0d;
+}
+
+header#showcase {
+  background: url('../img/glass-pour-1024.jpg') no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  min-height: 160px;
+}
+
+/* Navbar placement and bg color */
+
+nav#navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 40px;
+  background: #548a0d;
+  border-top: 1px solid #0c0c0c;
+  box-shadow: 0px 4px 7px -3px black;
+}
+
+ul#link-wrapper {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+
+
+/* List flow */
+
+nav#navbar ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  min-width: 250px;
+}
+
+
+/* Remove list bullets */
+
+nav#navbar ul li {
+  list-style: none;
+}
+
+
+/* Remove anchor underline */
+
+nav#navbar ul li a {
+  font-family: 'Amatic SC', cursive;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 1.375em;
+  font-weight: 900;
+  line-height: 1.9em;
+}
+
+nav#navbar ul li:hover {
+  background: rgba(22, 22, 22, 0.5);
+}
+
+
+/* ** Header / Nav */
+
+
+/* ** Body container */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+  margin: 20px;
+  min-height: 100%;
+  grid-template-rows: 1fr auto;
+}
+
+
+/* Body container ** */
+
+
+/* Sections: Welcome, Events, About ** */
+
+
+/* Span sections/footers across page */
+
+section#welcome,
+section#events,
+section#about,
+footer#copyright,
+footer#project {
+  grid-column: 1 / -1;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+
+/* ** Sections */
+
+
+/* Footers: Copyright, Project ** */
+
+footer#copyright,
+footer#project {
+  text-align: center;
+}
+
+footer#copyright {
+  background: #548a0d;
+  color: #f4f4f4;
+  padding: 10px;
+}
+
+footer#project {
+  background: #111;
+  color: #f4f4f4;
+  padding: 5px 0;
+}
+
+footer#project a {
+  text-decoration: none;
+  color: #999;
+}
+
+/* ** Footers */
+
+/* Mobile Media Queries ** */
+/* Responsive image */
+
+/* Medium Phones */
+
+@media screen and (min-width: 375px) {
+  header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 180px;
+  }
+}
+
+/* Large Phones */
+
+@media screen and (min-width: 425px) {
+    header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 210px;
+  }
+}
+
+/* X-Large Phones */
+
+@media screen and (min-width: 640px) {
+    header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 315px;
+  }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+    header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 375px;
+  }
+}
+
+/* ** Mobile Site */
+
+/* Large Screens ** */
+
+/* Media Queries */
+
+/* Laptops */
+
+@media screen and (min-width: 1024px) {
+    header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+    header#showcase {
+    background: url('../img/glass-pour-1024.jpg') no-repeat;
+    background-size: 100%;
+    background-position: 0% 0%;
+    min-height: 500px;
+  }
+}
+
+/* ** Large Screens */
